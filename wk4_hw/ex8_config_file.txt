@@ -1,0 +1,3 @@
+logging buffered 25000
+no logging console
+show running-config

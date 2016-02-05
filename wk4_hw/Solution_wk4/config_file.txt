@@ -1,0 +1,2 @@
+outp2 = pynet_rtr2.send_command("show arp")
+print "\n'show arp' of {}:\n{}".format(pynet2['ip'], outp2)
