@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 """
-Problem 1. Using SNMPv3 create a script that detects router configuration changes.
+Description of hw1 (Week 3)
+--------------------------
+Using SNMPv3 create a script that detects router configuration changes.
 [1. done] If the running configuration has changed, then send an email notification to yourself identifying 
 the router that changed and the time that it changed.
 Note, the running configuration of pynet-rtr2 is changing every 15 minutes (roughly at 0, 15, 30, and 45 minutes after the hour).
@@ -11,7 +13,11 @@ One way you can accomplish this is by using a pickle file, see:
     http://youtu.be/ZJOJjyhhEvM  
 A pickle file lets you save native Python data structures (dictionaries, lists, objects) directly to a file.
 
-[3. done] Here is some additional reference material that you will probably need to solve this problem:
+Extra information:
+------------------
+Here is some additional reference material that you will probably need to solve
+this problem:
+
 Cisco routers have the following three OIDs:
 # Uptime when running config last changed
 ccmHistoryRunningLastChanged = '1.3.6.1.4.1.9.9.43.1.1.1.0'   

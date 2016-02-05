@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Description of hw2 (Week 2)
+Description of hw2 (Week 3)
 --------------------------
 Problem 2. Using SNMPv3 create two SVG image files.  
 The first image file should graph the input and output octets on interface FA4 on pynet-rtr1
