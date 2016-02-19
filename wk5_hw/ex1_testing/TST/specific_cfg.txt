@@ -1,0 +1,8 @@
+hostname pynet-rtr1
+!
+interface FastEthernet0/1
+ switchport access vlan 100
+ switchport mode access
+ spanning-tree portfast
+!
+end

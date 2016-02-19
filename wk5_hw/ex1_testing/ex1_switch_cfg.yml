@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  vars:
+    hostname: pynet-rtr1
+    access_vlan: 100
+  tasks:             # Can have multiple tasks like 3 tasks below
+  - name: Generate a new Switch configuration file
+    template: src=/home/pluu/PYTHON_4_NTWK_ENGRS/wk5_hw/ex1_testing/access_switch.j2
+              dest=/home/pluu/PYTHON_4_NTWK_ENGRS/wk5_hw/ex1_testing/TST/specific_cfg.txt
+
+
+
