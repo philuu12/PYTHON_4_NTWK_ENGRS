@@ -1,0 +1,6 @@
+---
+- name: Generate configure file
+  hosts: local   # Cannot be localhost, must be local
+
+  roles:
+    - access_switch

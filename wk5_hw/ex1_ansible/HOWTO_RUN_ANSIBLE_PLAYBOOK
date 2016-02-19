@@ -1,0 +1,2 @@
+Type: ansible-playbook ex1_switch_cfg.yml
+

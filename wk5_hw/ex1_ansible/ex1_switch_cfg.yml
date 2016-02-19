@@ -1,0 +1,58 @@
+#1. Create an Ansible playbook that generates five switch configurations
+#based upon the below partial switch configuration. The hostname, ip_addr,
+#and default_gateway should be unique for each switch.
+#
+#>>>> access_switch.j2 file <<<<
+#service timestamps debug datetime msec localtime show-timezone
+#service timestamps log datetime msec localtime show-timezone
+#!
+#hostname {{item.hostname}}
+#!
+#logging buffered 32000
+#no logging console
+#enable secret 0 {{item.secret}}
+#
+---
+- hosts: localhost
+  # vars:
+    # hostname: pynet-rtr1
+  tasks:             # Can have multiple tasks like 3 tasks below
+  - name: Generate a new Switch configuration file
+    template: src=/home/pluu/PYTHON_4_NTWK_ENGRS/wk5_hw/ex1_ansible/access_switch.j2
+              dest=/home/pluu/PYTHON_4_NTWK_ENGRS/wk5_hw/ex1_ansible/{{item.hostname}}.txt
+    with_items:
+        - { hostname: pynet-sw1, 
+            secret: cisco, 
+            access_vlan: 100,
+            ip_addr: 192.168.100.2,
+            default_gateway: 192.168.100.1,
+            snmp_community: public
+          } 
+        - { hostname: pynet-sw2, 
+            secret: cisco, 
+            access_vlan: 200,
+            ip_addr: 192.168.200.2,
+            default_gateway: 192.168.200.1,
+            snmp_community: public
+          } 
+        - { hostname: pynet-sw3, 
+            secret: cisco, 
+            access_vlan: 300,
+            ip_addr: 192.168.300.2,
+            default_gateway: 192.168.300.1,
+            snmp_community: public
+          } 
+        - { hostname: pynet-sw4, 
+            secret: cisco, 
+            access_vlan: 400,
+            ip_addr: 192.168.400.2,
+            default_gateway: 192.168.400.1,
+            snmp_community: public
+          } 
+        - { hostname: pynet-jnpr-srx1, 
+            secret: juniper, 
+            access_vlan: 500,
+            ip_addr: 192.168.500.2,
+            default_gateway: 192.168.500.1,
+            snmp_community: public
+          } 

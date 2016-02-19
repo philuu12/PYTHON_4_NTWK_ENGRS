@@ -1,0 +1,42 @@
+---
+test_switches:
+        - { hostname: pynet-sw1, 
+            secret: cisco, 
+            access_vlan: 100,
+            ip_addr: 192.168.100.2,
+            default_gateway: 192.168.100.1,
+            SNMPv3: True,
+            snmp_community: <public>
+          } 
+        - { hostname: pynet-sw2, 
+            secret: cisco, 
+            access_vlan: 200,
+            ip_addr: 192.168.200.2,
+            default_gateway: 192.168.200.1,
+            SNMPv3: True,
+            snmp_community: <public>
+          } 
+        - { hostname: pynet-sw3, 
+            secret: cisco, 
+            access_vlan: 300,
+            ip_addr: 192.168.300.2,
+            default_gateway: 192.168.300.1,
+            SNMPv3: False,
+            snmp_community: <public>
+          } 
+        - { hostname: pynet-sw4, 
+            secret: cisco, 
+            access_vlan: 400,
+            ip_addr: 192.168.400.2,
+            default_gateway: 192.168.400.1,
+            SNMPv3: True,
+            snmp_community: <public>
+          } 
+        - { hostname: pynet-jnpr-srx1, 
+            secret: cisco, 
+            access_vlan: 500,
+            ip_addr: 192.168.500.2,
+            default_gateway: 192.168.500.1,
+            SNMPv3: False,
+            snmp_community: <public>
+          } 
