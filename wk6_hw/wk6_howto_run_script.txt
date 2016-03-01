@@ -1,0 +1,3 @@
+Example: ansible-playbook ex5_ansible_arista.yml
+ex5_ansible_arista.yml is the YAML file
+

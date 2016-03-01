@@ -1,0 +1,12 @@
+#4. Use Ansible to restore your 'primary Ethernet interface' back to the following state (or your secondary interface depending on which one you used):
+#
+#description:                    <none>
+#switchport mode:           access
+#access VLAN:                1
+#trunk allowed VLANs:    all
+#
+#Also use Ansible to remove the three VLANs that you configured.
+
+
+
+

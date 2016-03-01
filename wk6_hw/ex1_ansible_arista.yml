@@ -1,0 +1,5 @@
+#1. Using Ansible, configure three VLANs on the Arista switch specifying
+#both the VLAN IDs and the VLAN names.  For the VLAN IDs randomly pick three 
+#numbers between 100 and 999.
+
+

@@ -1,0 +1,17 @@
+#2. Use Ansible to configure your 'primary Ethernet interface' as follows:
+#
+#interface description:     *** IN USE ***
+#switchport mode:          access
+#VLAN:                           <one of the VLANs created in exercise1>
+#
+#Your 'primary Ethernet interface' is specified in your ~/ansible-hosts file.
+#
+#If your primary interface is already 'IN USE' (by someone else), then use 
+#your secondary interface (once again specified in ~/ansible-hosts).  You can 
+#determine if an interface is already in use by SSH'ing into the switch. 
+#Reminder, do NOT use Ethernet1.
+
+
+
+
+
