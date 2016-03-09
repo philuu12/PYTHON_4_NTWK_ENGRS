@@ -1,0 +1,32 @@
+How to run all exercises in Week 8:
+
+1) Generate information from the models, so that Python will know how to generate tables next:
+python /home/pluu/DJANGOX/djproject/manage.py  makemigrations net_system
+
+2) Initialize the setup of the Database:
+python /home/pluu/DJANGOX/djproject/manage.py migrate
+
+3) Load device info and credentials into the Database:
+python /home/pluu/DJANGOX/djproject/net_system/load_devices.py
+python /home/pluu/DJANGOX/djproject/net_system/load_credentials.py
+
+4) (Optional) Then one can run commands to modify the network device objects:
+(applied_python)[pluu@ip-172-30-0-57 djproject]$ pwd
+/home/pluu/DJANGOX/djproject
+(applied_python)[pluu@ip-172-30-0-57 djproject]$ python manage.py shell
+>>>
+>>>from net_system.models import NetworkDevice, Credentials
+>>>devices = NetworkDevice.objects.all()     # Query database of all object devices.
+>>>creds = Credentials.objects.all()
+>>> devices     # 7 of them. type:  type(devices)
+>>> creds         # 2 of them. type: type(creds)
+>>> for a_device in devices:
+>>> print a_device.device_name
+>>> cisco1 = devices(0)
+>>> cisco1.device_name
+>>> cisco1.ip_address
+
+Note: Running all the scripts sequentially 1 to 8 also helps, but not necessarily. Exercise 1 loads
+the devices and their credentials needed for later exercises. Without running exercise 1 first,
+subsequent scripts might not run. (This issue is now no longer present; exercise 1 is imported in
+subsequent exercises. Thus, all remaing exercises don't depend on Exercise 1 running already anymore.)
