@@ -1,0 +1,5 @@
+1. Create a directory called mytest. In ./mytest create three Python modules world.py, simple.py, whatever.py.
+
+     a. These three files should each have a function that prints a statement when called (func1, func2, func3).
+     b. In each of the three modules use the __name__ technique to separate executable code from importable code. Each module should contain executable code.
+     c. Verify that you are NOT able to import ./mytest (try this from the directory that contains ./mytest).

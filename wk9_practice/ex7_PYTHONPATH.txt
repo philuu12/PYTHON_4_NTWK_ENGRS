@@ -1,0 +1,29 @@
+7. Description of the exercise:
+-------------------------------
+Modify your PYTHONPATH such that the directory containing ./mytest is now on your PYTHONPATH. Verify this in sys.path.
+
+Solution:
+------------------------------------------
+(venv)[pluu@ip-172-30-0-57 wk9_hw]$ pwd
+/home/pluu/PYTHON_4_NTWK_ENGRS/wk9_hw
+
+(venv)[pluu@ip-172-30-0-57 wk9_hw]$ PYTHONPATH=/home/pluu/DJANGOX/djproject/:/home/pluu/PYTHON_4_NTWK_ENGRS/wk9_hw/ex1_pkg_not_import/:/home/pluu/PYTHON_4_NTWK_ENGRS/wk9_hw/ex2_pkg_imported/:/home/pluu/PYTHON_4_NTWK_ENGRS/wk9_hw/ex3_pkg_imported/
+
+
+Verification:
+------------------------------------------
+(venv)[pluu@ip-172-30-0-57 wk9_hw]$ python
+Python 2.7.10 (default, Dec  8 2015, 18:25:23)
+[GCC 4.8.3 20140911 (Red Hat 4.8.3-9)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>> import sys
+>>>
+>>> sys.path
+['', '/home/pluu/DJANGOX/djproject', '/home/pluu/PYTHON_4_NTWK_ENGRS/wk9_hw/ex1_pkg_not_import', '/home/pluu/PYTHON_4_NTWK_ENGRS/wk9_hw/ex2_pkg_imported', '/home/pluu/PYTHON_4_NTWK_ENGRS/wk9_hw/ex3_pkg_imported', '/home/pluu/PYTHON_4_NTWK_ENGRS/venv/local/lib64/python2.7/site-packages', '/home/pluu/PYTHON_4_NTWK_ENGRS/venv/local/lib/python2.7/site-packages', '/home/pluu/PYTHON_4_NTWK_ENGRS/venv/lib64/python2.7', '/home/pluu/PYTHON_4_NTWK_ENGRS/venv/lib/python2.7', '/home/pluu/PYTHON_4_NTWK_ENGRS/venv/lib64/python2.7/site-packages', '/home/pluu/PYTHON_4_NTWK_ENGRS/venv/lib/python2.7/site-packages', '/home/pluu/PYTHON_4_NTWK_ENGRS/venv/lib64/python2.7/lib-dynload', '/usr/lib64/python2.7', '/usr/lib/python2.7']
+>>>
+
+Note: ex1_pkg_not_import, ex2_pkg_imported, and ex3_pkg_imported all appear in the sys.path output above.
+
+
+

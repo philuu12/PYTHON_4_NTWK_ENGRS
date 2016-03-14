@@ -1,0 +1,5 @@
+3. Add a __all__ variable to your __init__.py file. 
+
+Test out __all__ using 'from mytest import *'. Verify that you can directly execute func1(), func2(), func3(). Once again do this from the directory containing ./mytest.
+
+

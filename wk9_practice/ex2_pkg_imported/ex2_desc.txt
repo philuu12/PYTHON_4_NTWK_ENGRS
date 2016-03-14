@@ -1,0 +1,5 @@
+2. Make mytest a package. 
+
+    a. In the __init__.py file import each of the functions in world.py, simple.py, whatever.py. 
+
+    b. Test out your package from the Python interpreter shell. Make sure you can invoke your three functions using both 'import mytest' and 'from mytest import func1, func2, func3'. Once again do this from the directory containing ./mytest.

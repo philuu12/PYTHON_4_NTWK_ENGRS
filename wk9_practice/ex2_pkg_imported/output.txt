@@ -1,0 +1,20 @@
+(venv)[pluu@ip-172-30-0-57 ex2_pkg_imported]$ ls
+mytest
+(venv)[pluu@ip-172-30-0-57 ex2_pkg_imported]$ python
+Python 2.7.10 (default, Dec  8 2015, 18:25:23)
+[GCC 4.8.3 20140911 (Red Hat 4.8.3-9)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import mytest
+
+or 
+
+>>> from mytest import func1, func2, func3
+>>> func1()
+Simple - func1. This is simple function
+>>> func2()
+whatever - func2: This is a whatever function
+>>> func3()
+world - func3: This is a world function
+>>>
+
+
