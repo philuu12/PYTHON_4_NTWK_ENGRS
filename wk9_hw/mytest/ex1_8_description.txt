@@ -1,0 +1,39 @@
+My solutions to these exercises are posted at:
+https://github.com/ktbyers/pynet/tree/master/pyth_ans_ecourse/class9
+
+
+1. Create a directory called mytest. In ./mytest create three Python modules world.py, simple.py, whatever.py.
+
+     a. These three files should each have a function that prints a statement when called (func1, func2, func3).
+     b. In each of the three modules use the __name__ technique to separate executable code from importable code. Each module should contain executable code.
+     c. Verify that you are NOT able to import ./mytest (try this from the directory that contains ./mytest).
+?
+
+
+2. Make mytest a package. 
+    a. In the __init__.py file import each of the functions in world.py, simple.py, whatever.py. 
+
+    b. Test out your package from the Python interpreter shell. Make sure you can invoke your three functions using both 'import mytest' and 'from mytest import func1, func2, func3'. Once again do this from the directory containing ./mytest.
+
+
+3. Add a __all__ variable to your __init__.py file. 
+Test out __all__ using 'from mytest import *'. Verify that you can directly execute func1(), func2(), func3(). Once again do this from the directory containing ./mytest.
+
+
+4. Create a class MyClass in world.py. 
+    a. This class should require that three variables be passed in upon initialization. 
+
+    b. Write two methods associated with this class 'hello' and 'not_hello'. Have both these methods print a statement that uses all three of the initialization variables.
+
+
+5. Write a child class MyChildClass of MyClass. This child class should override the 'hello' method and print a different statement.
+
+
+6. Optional bonus question -- have MyChildClass augment the __init__() method. In other words, the child class should do something additional in the __init__() method yet still call its parent class __init__().
+
+
+7. Modify your PYTHONPATH such that the directory containing ./mytest is now on your PYTHONPATH. Verify this in sys.path.
+
+
+8. Update the __init__.py file and the __all__ variable to include MyClass.
+
