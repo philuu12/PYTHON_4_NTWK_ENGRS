@@ -1,1 +1,11 @@
-/home/pluu/ANSIBLE/wk7_ex3_add_vlan.yml
+---
+# Symbolically linked to this real file: /home/pluu/ANSIBLE/wk7_ex3_add_vlan.yml
+# How to run this script: ansible-playbook wk7_ex3_add_vlan.yml
+# With vlan_name: ex3_add_vlan_arista: arista_sw={{ inventory_hostname }}  vlan_id=150 vlan_name="pluu_hw7_arista_ansible"
+# No vlan_name: ex3_add_vlan_arista: arista_sw={{ inventory_hostname }}  vlan_id=150 
+- name: Arista Ansible testing
+  hosts: arista
+
+  tasks:  
+    - name: create a vlan
+      ex3_add_vlan_arista: arista_sw={{ inventory_hostname }} vlan_id=150 vlan_name="pluu_hw7_arista_ansible"
