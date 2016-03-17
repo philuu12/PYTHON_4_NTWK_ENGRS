@@ -1,5 +1,6 @@
 1) How to run Python Ansible module playbook, at prompt:
-ansible-playbook 
+ansible-playbook wk7_ex3_add_vlan.yml
+(wk7_ex3_add_vlan.yml is the yaml file)
 
 2) Must have the yaml file and Ansible Python module. Ansible Python module
 must reside under sub directory "library" relative to the current directory.
