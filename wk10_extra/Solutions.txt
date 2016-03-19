@@ -1,0 +1,15 @@
+My solutions to these exercises are posted at:
+https://github.com/ktbyers/pynet/tree/master/pyth_ans_ecourse/juniper_class
+
+Increasing the connection timeout: 
+
+>>> from jnpr.junos import Device
+>>> a_device = Device(host="101.101.101.228", user='pyclass', password='password')
+>>> a_device.open()
+Device(101.101.101.228)
+>>> a_device.timeout
+30
+>>> a_device.timeout = 120 
+
+The timeout defaults to 30 seconds. Here, I set it to 120 seconds.
+
