@@ -1,0 +1,15 @@
+---
+- name: Testing Juniper and Ansible
+  hosts: pynet-jnpr-srx1
+  tasks:
+    - name: Verifying NETCONF
+      wait_for: host={{ ansible_ssh_host }} port=9822
+
+    - name: Change hostname to Juniper-testing 
+      junos_install_config: 
+            host={{ ansible_ssh_host }} 
+            file=ex2_jnpr_conf_hostname.conf
+            overwrite=false
+            user={{ juniper_user }}
+            passwd={{ juniper_passwd }}
+

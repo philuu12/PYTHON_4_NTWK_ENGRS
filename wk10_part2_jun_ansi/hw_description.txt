@@ -1,0 +1,16 @@
+Additional Content:
+Juniper Ansible Modules
+Getting Started with Juniper and Ansible
+
+Exercises:
+-----------
+My solutions to these exercises are posted at:
+https://github.com/ktbyers/pynet/tree/master/pyth_ans_ecourse/juniper_ansible
+
+1. Print out the Juniper SRX's facts using Ansible.
+2. Load a configuration change that sets the system hostname using Juniper's conf (curly brace) notation.
+3. Load a configuration change that sets the system hostname using XML.
+
+
+
+
