@@ -1,0 +1,2 @@
+My solutions to these exercises are posted at:
+https://github.com/ktbyers/pynet/tree/master/pyth_ans_ecourse/juniper_ansible
